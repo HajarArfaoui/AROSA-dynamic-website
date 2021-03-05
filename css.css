@@ -1,0 +1,28 @@
+
+body
+{
+	height:67%;
+	background:#DFF49C;
+}
+
+#frm
+{
+	
+	border:solid gray 1px;
+	
+	width:20%;
+	border-radius:5px;
+	margin-left:36%;
+	margin-top:15%;
+	background:white;
+	padding:50px;
+	
+}
+
+#btn
+{
+	color:#fff;
+	background:#337ab7;
+	padding:5 px;
+	margin-left:69%;
+}

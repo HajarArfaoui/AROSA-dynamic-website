@@ -1,0 +1,54 @@
+<html>
+<head>
+	<title>TP 5 - Virement</title>
+	<script language="javascript">
+	
+function verif_formulaire()
+{
+ if(document.form.cmpt.value == "")  {
+   alert("Code credit est neccessaire !");
+   document.form.cmpt.focus();
+   return false;
+  }
+}
+</script>
+<script language="javascript">
+function surligne(champ, erreur)
+{
+   if(erreur)
+      champ.style.backgroundColor = "#fba";
+   else
+      champ.style.backgroundColor = "";
+}
+function verifPseudo(champ)
+{
+   if(document.form.cmpt.value == "")
+   {
+      surligne(champ, true);
+      return false;
+   }
+  
+  else
+   {
+      surligne(champ, false);
+      return true;
+   }
+} 
+</script>
+         
+	<meta charset="UTF-8">
+	</head>
+	<body>
+	<fieldset>
+	<legend><img src="Images/ajoute.png"> <b>Ajouter Virement </b></legend>
+		<center><form action="addVirement.php" Method="POST" onSubmit="return verif_formulaire()" name="form">
+			<table><tr><th>Code Credit : <font color="red">*</font></th><td><input type="text" name="cmpt" onblur="verifPseudo(this)"> </td></tr>
+			<tr><th> Montant ajouté : </th><td><input type="text" name="mont"></td></tr>
+			<tr><td></td><td><input type="submit" value="Ajouter">
+			<input type="reset" value="Annuler"></td></tr></table>
+		</form>
+		</center>
+
+	</body>
+
+</html>

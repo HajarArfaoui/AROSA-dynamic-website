@@ -1,0 +1,10 @@
+ul{
+    width: 560px;
+    padding: 0;
+}
+ul li{
+    display: inline-block;
+    width: 112px;
+    height: 165px;
+    background: orangered;
+}

@@ -1,0 +1,103 @@
+﻿.haut
+{
+	border-bottom: thick solid #81F781;
+	border-top: thick solid #81F781;
+background-color:green;
+height:13%;
+
+width:100%;
+
+
+}
+.gauche
+{
+	width:40%;
+	margin-left:5%;
+	
+}
+.gauche script
+{
+	margin-left:3%;
+}
+body
+{
+	margin:0 0px;
+}
+.haut form 
+{
+	
+	margin-left:67%;
+	margin-top:-5%;
+}
+
+
+a
+{
+	color:white;
+}
+.valide
+{
+	background-color:green;
+	width:100px;
+	height:20px;
+	margin-left:73%;
+	margin-top:-5%;
+}
+.droite
+{
+	margin-top:-22%;
+	margin-left:50%;
+	margin-right:5%;
+}
+a.s3d  {
+    clear: both;
+    
+    -webkit-border-radius:3px;
+       -moz-border-radius:3px;
+            border-radius:3px;
+            
+    -webkit-box-shadow:0 4px 5px rgba(0,0,0,.3);
+       -moz-box-shadow:0 4px 5px rgba(0,0,0,.3);
+            box-shadow:0 4px 5px rgba(0,0,0,.3);
+            
+    display: inline-block !important;
+    font: 700 13px/36px 'Arial', Helvetica, Clean, sans-serif;
+    height: 26px;
+    margin: 0 0 10px;
+    padding: 0 10px 11px;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 0 1px 1px rgba(255,255,255,.35);
+    width: 160px; 
+	}
+a.Ajouter {
+    background: #F98CB6;
+    background: -webkit-gradient(linear, 0 0, 0 0, from(#F98CB6), to(#F75F94));
+    background: -moz-linear-gradient(#F98CB6, #F75F94);
+    background: linear-gradient(#F98CB6, #F75F94);
+    border-top: 1px solid #fbbad3;
+    color: rgba(74,36,49,.9); }
+    
+a.Ajouter:active {
+    background: #F75F94;
+    background: -webkit-gradient(linear, 0 0, 0 0, from(#F75F94), to(#F98CB6));
+    background: -moz-linear-gradient(#F75F94, #F98CB6);
+    background: linear-gradient(#F75F94, #F98CB6);
+	}
+	.icons {
+    bottom: 5px;
+    display: block;
+    height: 26px;
+    position: absolute;
+    right: 10px;
+    width: 25px; }
+    
+.icons.Ajouter {
+    background-position: 0 0; 
+	 
+	  background: url('add-user.png');
+	}
+
+	
+	
+}

@@ -1,0 +1,134 @@
+.contenu
+{
+margin-left:10%;
+margin-right:10%;
+margin-top:-0.5%;
+
+
+background-color:#fff;
+}
+
+.counter
+{
+margin-left:10%;
+margin-right:10%;
+margin-top:-0.5%;
+background-color:#fff;
+}
+
+body
+{
+background-color:#01DF01;
+}
+.table1
+{
+margin-top:-16%;
+margin-left:1%;
+
+}
+
+ fieldset
+{
+margin-top:10%; 
+margin-left:80%;
+
+}
+.header
+{
+background-color:green;
+height:6%;
+
+}
+.header img
+{
+float:right;
+margin-right:3%;
+margin-top:0.5%;
+
+
+}
+.header p
+{
+margin-right:10px;
+float:right;
+margin-top:10px;
+}
+a.s3d  {
+    clear: both;
+    
+    -webkit-border-radius:3px;
+       -moz-border-radius:3px;
+            border-radius:3px;
+            
+    -webkit-box-shadow:0 4px 5px rgba(0,0,0,.3);
+       -moz-box-shadow:0 4px 5px rgba(0,0,0,.3);
+            box-shadow:0 4px 5px rgba(0,0,0,.3);
+            
+    display: inline-block !important;
+    font: 700 13px/36px 'Arial', Helvetica, Clean, sans-serif;
+    height: 26px;
+    margin: 0 0 10px;
+    padding: 0 10px 11px;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 0 1px 1px rgba(255,255,255,.35);
+    width: 160px; 
+	}
+a.Ajouter {
+    background: #F98CB6;
+    background: -webkit-gradient(linear, 0 0, 0 0, from(#F98CB6), to(#F75F94));
+    background: -moz-linear-gradient(#F98CB6, #F75F94);
+    background: linear-gradient(#F98CB6, #F75F94);
+    border-top: 1px solid #fbbad3;
+    color: rgba(74,36,49,.9); }
+    
+a.Ajouter:active {
+    background: #F75F94;
+    background: -webkit-gradient(linear, 0 0, 0 0, from(#F75F94), to(#F98CB6));
+    background: -moz-linear-gradient(#F75F94, #F98CB6);
+    background: linear-gradient(#F75F94, #F98CB6);
+	}
+	
+	
+	a.Afficher {
+    background: #65acc8;
+    background: -webkit-gradient(linear, 0 0, 0 0, from(#65acc8), to(#4586ae));
+    background: -moz-linear-gradient(#65acc8, #4586ae);
+    background: linear-gradient(#65acc8, #4586ae);
+    border-top: 1px solid #a1cdde;
+    color: rgba(25,45,55,.9); }
+    
+a.Afficher:active {
+    background: #4586ae;
+    background: -webkit-gradient(linear, 0 0, 0 0, from(#4586ae), to(#65acc8));
+    background: -moz-linear-gradient(#4586ae, #65acc8);
+    background: linear-gradient(#4586ae, #65acc8); 
+	
+	}
+	
+
+
+.icons {
+    bottom: 5px;
+    display: block;
+    height: 26px;
+    position: absolute;
+    right: 10px;
+    width: 25px; }
+    
+.icons.Ajouter {
+    background-position: 0 0; 
+	 
+	  background: url('ajoute.png');
+	}
+
+.icons.Afficher{
+    background-position: -25px 0; 
+	 background: url('consul.png');
+	}
+
+
+
+ 
+
+

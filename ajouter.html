@@ -1,0 +1,226 @@
+﻿<html><head>
+	<title>inscription</title>
+	<meta charset="UTF-8">
+	
+	<link rel="stylesheet" type="text/css" href="ajout.css"> 
+	
+
+<script type="text/javascript">
+<!--
+                        function open_infos()
+                        {
+                                window.open('delClient.html','nom_de_ma_popup','menubar=no, scrollbars=no, top=100, left=100, width=400, height=200');
+                        }
+                -->
+                </script>
+				<script type="text/javascript">
+                <!--
+                        function open_info()
+                        {
+                                window.open('search.html','nom_de_ma_popup','menubar=no, scrollbars=no, top=100, left=100, width=800, height=200');
+                        }
+                -->
+                </script>
+				<script type="text/javascript">
+              function surligne(champ, erreur)
+{
+   if(erreur)
+      champ.style.backgroundColor = "#fba";
+   else
+      champ.style.backgroundColor = "";
+}
+function verifPseudo(champ)
+{
+   if(document.formulaire.num.value=="")
+   {
+      surligne(champ, true);
+      return false;
+   }
+   else
+   {
+      surligne(champ, false);
+      return true;
+   }
+}
+function verifPseudo1(champ)
+{
+   if(document.formulaire.cin.value=="")
+   {
+      surligne(champ, true);
+      return false;
+   }
+   else
+   {
+      surligne(champ, false);
+      return true;
+   }
+}
+function verifPseudo2(champ)
+{
+   if(document.formulaire.log.value=="")
+   {
+      surligne(champ, true);
+      return false;
+   }
+   else
+   {
+      surligne(champ, false);
+      return true;
+   }
+}
+function verifPseudo3(champ)
+{
+   if(document.formulaire.mail.value=="")
+   {
+      surligne(champ, true);
+      return false;
+   }
+   else
+   {
+      surligne(champ, false);
+      return true;
+   }
+}
+function verifPseudo4(champ)
+{
+   if(document.formulaire.pass.value=="")
+   {
+      surligne(champ, true);
+      return false;
+   }
+   else
+   {
+      surligne(champ, false);
+      return true;
+   }
+}
+function verifPseudo5(champ)
+{
+   if(document.formulaire.repass.value=="")
+   {
+      surligne(champ, true);
+      return false;
+   }
+   else
+   {
+      surligne(champ, false);
+      return true;
+   }
+}
+function verifPseudo6(champ)
+{
+   if(document.formulaire.fct.value=="")
+   {
+      surligne(champ, true);
+      return false;
+   }
+   else
+   {
+      surligne(champ, false);
+      return true;
+   }
+}
+</script>
+<script type="text/javascript">
+<!--
+function verif_formulaire()
+{
+ if(document.formulaire.num.value == "")  {
+   alert("Veuillez entrer votre code adhérent!");
+   document.formulaire.num.focus();
+   return false;
+  }
+ if(document.formulaire.cin.value == "") {
+   alert("Veuillez entrer votre CIN!");
+   document.formulaire.cin.focus();
+   return false;
+  }
+ if(document.formulaire.mail.value == "") {
+   alert("Veuillez entrer votre adresse électronique!");
+   document.formulaire.mail.focus();
+   return false;
+  }
+ if(document.formulaire.mail.value.indexOf('@') == -1) {
+   alert("Ce n'est pas une adresse électronique!");
+   document.formulaire.mail.focus();
+   return false;
+  }
+   if(document.formulaire.log.value == "") {
+   alert("Veuillez entrer votre login!");
+   document.formulaire.log.focus();
+   return false;
+  }
+ if(document.formulaire.pass.value == "") {
+   alert("Veuillez entrer votre motdepasse!");
+   document.formulaire.pass.focus();
+   return false;
+   }
+   if(document.formulaire.repass.value == "") {
+   alert("Veuillez entrer Confirmation de mot de passe!");
+   document.formulaire.repass.focus();
+   return false;
+   }
+   if(document.formulaire.fct.value == "") {
+   alert("Veuillez entrer votre fonction!");
+   document.formulaire.fct.focus();
+   return false;
+   }
+ 
+}
+
+
+function valider(monchamps){
+	var mini = 8
+	var maxi = 20
+	if ( mini != 0 ) {
+	  // Si la longueur de la saisie est inférieure au minimum demandé
+	  if ( monchamps.value.length < mini ) {
+		// Envoi d'une alerte
+		alert('Vous devez saisir au moins ' + mini + ' caracteres.');
+		return false
+	  }
+	}
+	  // Si la longueur de la saisie est supérieure au maximum demandé
+	if ( maxi != 0 ) {
+	  if ( monchamps.value.length > maxi ) {
+		alert('Vous ne devez pas saisir plus de ' + maxi + ' caracteres.');
+		return false
+	  }
+	}
+  }
+
+</script>
+	</head>
+	<body>
+		
+		
+		<div id="form"><br><br>
+		<center><font color="green" size="5"><b> Inscription </b></font></center>
+		<center>
+		<form name="formulaire"  method=POST onSubmit="return verif_formulaire()" action="ajout.php" >
+		<table>
+		<tr>
+		<th>NumEmployé:<font color='red'>*</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><td><input type="text" name="num" onblur="verifPseudo(this)"></td></tr>
+		<th>Nom:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><td><input type="text" name="nom" ></th></tr>
+		<th>Prenom:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><td><input type="text" name="pre" ></th></tr>
+		<th>Login:<font color='red'>*</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><td><input type="text" name="log" onblur="verifPseudo2(this)"></th></tr>
+		<th>CIN:<font color='red'>*</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><td><input type="text" name="cin" onblur="verifPseudo1(this)"></td></tr>
+		<th>Email:<font color='red'>*</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><td><input type="text" name="mail" placeholder='example@hotmail.com' onblur="verifPseudo3(this)"></td></tr>
+		<th>Mot de passe:<font color='red'>*</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><td><input type="password" name="pass" onBlur="valider(this)" placeholder="votre mot de passe" onblur="verifPseudo4(this)"> </td></tr>
+		<th>Retaper mot de passe:<font color='red'>*</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><td><input type="password" name="repass" onblur="verifPseudo5(this)"> </td></tr>
+		<th>Fonction:<font color='red'>*</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><td><input type ="text" name="fct" onblur="verifPseudo6(this)"></td></tr>
+		<tr><th><label for="date">Date de naissance:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+          <td><input type="date" name="date" id="date" size="30" /></td></tr>
+              
+		<tr><th>Adresse:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><td><textarea name="adrs" placeholder="votre adresse personnelle" rows="4" cols="50"></textarea></td></tr>
+		<tr><th>Téléphone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><td><input type="text" name="tel"  ></th></tr></table>
+		<br><br>
+		<center><input type="submit" value="enregistrer"  style="width:140px; height:30px; color:green; font-size:17;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Annuler"  style="width:140px; height:30px; color:green; font-size:17;"></center>
+		</form>
+		</center>
+	
+		</div>
+		
+		
+ </body>
+</html>
